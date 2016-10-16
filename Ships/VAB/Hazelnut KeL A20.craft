@@ -1,4 +1,4 @@
-ship = Hazelnut KeL A22
+ship = Hazelnut KeL A20
 version = 1.2.0
 description = 
 type = VAB
@@ -28,9 +28,9 @@ PART
 	modMass = 0
 	modSize = 0,0,0
 	link = parachuteSingle_4294764028
-	link = radialDrogue_4294775936
+	link = sensorThermometer_4294733766
 	link = stackDecoupler_4294754828
-	link = sensorBarometer_4294771726
+	link = radialDrogue_4294775936
 	attN = bottom,stackDecoupler_4294754828
 	attN = top,parachuteSingle_4294764028
 	EVENTS
@@ -384,23 +384,23 @@ PART
 }
 PART
 {
-	part = radialDrogue_4294775936
+	part = sensorThermometer_4294733766
 	partName = Part
-	pos = 0.509825945,13.8074064,-0.000759461429
+	pos = -0.244249985,13.6737785,-0.000759458402
 	attPos = 0,0,0
-	attPos0 = 0.351391971,0.393855095,2.09547579E-08
-	rot = -0.128708974,0.695293963,-0.128708884,-0.69529444
+	attPos0 = -0.402683944,0.260227203,2.40018352E-08
+	rot = 0.12870881,0.69529444,-0.128708899,0.695293963
 	attRot = 0,0,0,1
-	attRot0 = -0.128708974,0.695293963,-0.128708884,-0.69529444
+	attRot0 = 0.12870881,0.69529444,-0.128708899,0.695293963
 	mir = 1,1,1
 	symMethod = Radial
 	autostrutMode = Off
 	rigidAttachment = False
-	istg = 1
+	istg = -1
 	resPri = 0
 	dstg = 0
-	sidx = 0
-	sqor = 1
+	sidx = -1
+	sqor = -1
 	sepI = -1
 	attm = 1
 	modCost = 0
@@ -418,14 +418,31 @@ PART
 	}
 	MODULE
 	{
-		name = ModuleParachute
+		name = ModuleEnviroSensor
 		isEnabled = True
-		persistentState = STOWED
-		animTime = 0
-		minAirPressureToOpen = 0.0199999996
-		deployAltitude = 2500
-		spreadAngle = 7
-		automateSafeDeploy = 0
+		sensorActive = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			ToggleAction
+			{
+				actionGroup = None
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleScienceExperiment
+		isEnabled = True
+		Deployed = False
+		Inoperable = False
+		cooldownToGo = 0
 		stagingEnabled = True
 		EVENTS
 		{
@@ -436,55 +453,10 @@ PART
 			{
 				actionGroup = None
 			}
-			CutAction
+			ResetAction
 			{
 				actionGroup = None
 			}
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleTestSubject
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleDragModifier
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleDragModifier
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
 		}
 		UPGRADESAPPLIED
 		{
@@ -1649,23 +1621,23 @@ PART
 }
 PART
 {
-	part = sensorBarometer_4294771726
+	part = radialDrogue_4294775936
 	partName = Part
-	pos = -0.248532817,13.6666193,-0.000759458111
+	pos = 0.509825945,13.8074064,-0.000759461429
 	attPos = 0,0,0
-	attPos0 = -0.406966776,0.25306797,2.42725946E-08
-	rot = 0.12870881,0.69529444,-0.128708899,0.695293963
+	attPos0 = 0.351391971,0.393855095,2.09547579E-08
+	rot = -0.128708974,0.695293963,-0.128708884,-0.69529444
 	attRot = 0,0,0,1
-	attRot0 = 0.12870881,0.69529444,-0.128708899,0.695293963
+	attRot0 = -0.128708974,0.695293963,-0.128708884,-0.69529444
 	mir = 1,1,1
 	symMethod = Radial
 	autostrutMode = Off
 	rigidAttachment = False
-	istg = -1
+	istg = 1
 	resPri = 0
 	dstg = 0
-	sidx = -1
-	sqor = -1
+	sidx = 0
+	sqor = 1
 	sepI = -1
 	attm = 1
 	modCost = 0
@@ -1683,31 +1655,14 @@ PART
 	}
 	MODULE
 	{
-		name = ModuleEnviroSensor
+		name = ModuleParachute
 		isEnabled = True
-		sensorActive = False
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-			ToggleAction
-			{
-				actionGroup = None
-			}
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleScienceExperiment
-		isEnabled = True
-		Deployed = False
-		Inoperable = False
-		cooldownToGo = 0
+		persistentState = STOWED
+		animTime = 0
+		minAirPressureToOpen = 0.0199999996
+		deployAltitude = 2500
+		spreadAngle = 7
+		automateSafeDeploy = 0
 		stagingEnabled = True
 		EVENTS
 		{
@@ -1718,10 +1673,55 @@ PART
 			{
 				actionGroup = None
 			}
-			ResetAction
+			CutAction
 			{
 				actionGroup = None
 			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleTestSubject
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleDragModifier
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleDragModifier
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
 		}
 		UPGRADESAPPLIED
 		{
