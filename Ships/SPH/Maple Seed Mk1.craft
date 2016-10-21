@@ -2,7 +2,7 @@ ship = Maple Seed Mk1
 version = 1.2.0
 description = 
 type = SPH
-size = 11.5946703,3.40423965,10.0164633
+size = 11.5946703,3.4042387,10.0164661
 PART
 {
 	part = Mark1Cockpit_4294396182
@@ -250,7 +250,7 @@ PART
 {
 	part = MK1Fuselage_4294392736
 	partName = Part
-	pos = 1.89028192,3.57289743,0.719102144
+	pos = 1.89028192,3.57289743,0.719101667
 	attPos = 0,0,0
 	attPos0 = 0,-1.11250007,1.1920929E-07
 	rot = 0.707106829,0,0,0.707106829
@@ -277,6 +277,7 @@ PART
 	link = wingConnector2_4294334924
 	link = GearFixed_4294321326
 	link = GearFixed_4294320952
+	link = sensorBarometer_4294754776
 	attN = top,Mark1Cockpit_4294396182
 	attN = bottom,airplaneTail_4294335532
 	EVENTS
@@ -304,7 +305,7 @@ PART
 {
 	part = airplaneTail_4294335532
 	partName = Part
-	pos = 1.89028192,3.57289743,-0.151408076
+	pos = 1.89028192,3.57289743,-0.15140903
 	attPos = 0,0.066990912,0
 	attPos0 = 0,-0.937500596,1.19209261E-07
 	rot = 0.746338129,0,0,0.66556704
@@ -328,7 +329,6 @@ PART
 	link = tailfin_4294335454
 	link = tailfin_4294335412
 	link = SurfAntenna_4294309540
-	link = radialDrogue_4294302214
 	attN = top,MK1Fuselage_4294392736
 	EVENTS
 	{
@@ -359,7 +359,7 @@ PART
 {
 	part = tailfin_4294335496
 	partName = Part
-	pos = 1.89028192,4.01294661,-3.72772646
+	pos = 1.89028192,4.01294661,-3.72772932
 	attPos = 0,0.0198962688,0.173336059
 	attPos0 = -1.77177171E-08,-3.62306452,-0.202667117
 	rot = 0.500550747,0.499448776,0.500550747,0.499448717
@@ -401,7 +401,7 @@ PART
 		deploy = False
 		deployInvert = False
 		partDeployInvert = False
-		authorityLimiter = 100
+		authorityLimiter = 15.1000004
 		stagingEnabled = True
 		EVENTS
 		{
@@ -430,7 +430,7 @@ PART
 {
 	part = tailfin_4294335454
 	partName = Part
-	pos = 1.86524153,3.98626471,-3.75248146
+	pos = 1.86524153,3.98626471,-3.75248432
 	attPos = 0.173271477,-9.53674316E-07,8.94069672E-08
 	attPos0 = -0.198311836,-3.62471795,-2.68220901E-07
 	rot = 0.0354217403,-0.696393371,-0.715471148,-0.0433914922
@@ -473,7 +473,7 @@ PART
 		deploy = False
 		deployInvert = False
 		partDeployInvert = False
-		authorityLimiter = 100
+		authorityLimiter = 29.5
 		stagingEnabled = True
 		EVENTS
 		{
@@ -502,10 +502,10 @@ PART
 {
 	part = tailfin_4294335412
 	partName = Part
-	pos = 1.9153223,3.98626471,-3.75248241
+	pos = 1.9153223,3.98626471,-3.75248528
 	attPos = -0.173271477,-1.90734863E-06,2.08616257E-07
 	attPos0 = 0.198311836,-3.62471795,-2.68220901E-07
-	rot = -0.715471327,-0.0433915108,0.0354217365,-0.696393192
+	rot = -0.715471327,-0.0433915183,0.035421744,-0.696393192
 	attRot = 0.0436193906,0,0,0.999048233
 	attRot0 = 0.0435507707,-0.00244338717,0.0559602566,-0.997479796
 	mir = 1,1,1
@@ -545,7 +545,7 @@ PART
 		deploy = False
 		deployInvert = False
 		partDeployInvert = False
-		authorityLimiter = 100
+		authorityLimiter = 29.5
 		stagingEnabled = True
 		EVENTS
 		{
@@ -574,7 +574,7 @@ PART
 {
 	part = miniFuselage_4294335370
 	partName = Part
-	pos = 0.962958932,3.57289743,0.0667874813
+	pos = 0.962958932,3.57289743,0.0667865276
 	attPos = 0,0,0
 	attPos0 = -0.927322984,-0.652314126,1.19209261E-07
 	rot = 0.707106888,4.21468513E-08,0,0.707106769
@@ -625,7 +625,7 @@ PART
 {
 	part = miniIntake_4294335280
 	partName = Part
-	pos = 0.962958932,3.57289743,0.535539031
+	pos = 0.962958932,3.57289743,0.535538554
 	attPos = 0,0,0
 	attPos0 = -4.41938646E-08,0.468749911,6.62730599E-08
 	rot = -0.701057553,-0.0922956094,-0.0922954455,-0.701057434
@@ -692,7 +692,7 @@ PART
 {
 	part = miniFuselage_4294335246
 	partName = Part
-	pos = 2.81760502,3.57289743,0.0667874813
+	pos = 2.81760502,3.57289743,0.0667865276
 	attPos = 0,0,0
 	attPos0 = 0.927322984,-0.652314126,1.19209261E-07
 	rot = -3.09086268E-08,0.707106709,0.707106948,1.12382246E-08
@@ -743,7 +743,7 @@ PART
 {
 	part = miniIntake_4294335156
 	partName = Part
-	pos = 2.81760502,3.57289743,0.535538673
+	pos = 2.81760502,3.57289743,0.535538197
 	attPos = 0,0,0
 	attPos0 = -4.41938646E-08,0.468749911,6.62730599E-08
 	rot = 0.701057613,-0.0922955722,-0.0922954381,0.701057374
@@ -810,10 +810,10 @@ PART
 {
 	part = wingConnector2_4294335122
 	partName = Part
-	pos = 1.71103024,3.07865286,0.685469985
+	pos = 1.71103024,3.07865286,0.685469508
 	attPos = 0.13037315,-2.38418579E-07,-0.0420413017
 	attPos0 = -0.309624851,-0.0336319134,0.536285758
-	rot = 0.704415977,-0.0616283417,-0.0616284683,0.704416215
+	rot = 0.704415977,-0.0616283379,-0.0616284646,0.704416215
 	attRot = 0,-0.57357657,0,0.819152176
 	attRot0 = -1.78813934E-07,-0.0871557295,-8.94069672E-08,0.99619478
 	mir = 1,1,1
@@ -865,10 +865,10 @@ PART
 {
 	part = wingConnector5_4294335088
 	partName = Part
-	pos = -1.98201776,3.72983694,1.15244865
+	pos = -1.98201799,3.72983694,1.1524483
 	attPos = 0,0,0
 	attPos0 = -3.75001621,0.466977119,-3.54547097E-07
-	rot = 0.704415977,-0.0616283156,-0.0616284199,0.704416215
+	rot = 0.704416037,-0.0616283044,-0.0616284162,0.704416156
 	attRot = 0,0,0,1
 	attRot0 = 1.12500618E-15,-4.47034836E-08,1.49011541E-08,1
 	mir = 1,1,1
@@ -916,10 +916,10 @@ PART
 {
 	part = wingConnector5_4294335054
 	partName = Part
-	pos = -1.98221445,3.72987127,0.209112406
+	pos = -1.98221445,3.72987127,0.209111571
 	attPos = 0,0,0
 	attPos0 = -3.75021601,-0.476357639,-8.70729536E-07
-	rot = 0.704415977,-0.0616283156,-0.0616284199,0.704416215
+	rot = 0.704416037,-0.0616283044,-0.0616284162,0.704416156
 	attRot = 0,0,0,1
 	attRot0 = 1.12500618E-15,-4.47034836E-08,1.49011541E-08,1
 	mir = 1,1,1
@@ -968,10 +968,10 @@ PART
 {
 	part = StandardCtrlSrf_4294335020
 	partName = Part
-	pos = -2.93311667,3.89754057,-0.259638786
+	pos = -2.93311667,3.89754057,-0.25963974
 	attPos = 0,0,0
 	attPos0 = -0.965569973,-0.468751103,-1.08170205E-07
-	rot = 0.704415858,-0.0616283678,-0.0616284646,0.704416335
+	rot = 0.704415858,-0.0616283566,-0.0616284534,0.704416335
 	attRot = -0.49999997,-0.49999997,-0.49999997,0.49999997
 	attRot0 = 1.78813934E-07,7.45057989E-08,1.49011683E-08,1
 	mir = 1,1,1
@@ -1011,7 +1011,7 @@ PART
 		deploy = False
 		deployInvert = False
 		partDeployInvert = False
-		authorityLimiter = 100
+		authorityLimiter = 30
 		stagingEnabled = True
 		EVENTS
 		{
@@ -1040,10 +1040,10 @@ PART
 {
 	part = StandardCtrlSrf_4294334988
 	partName = Part
-	pos = 0.816527247,3.23637819,-0.252032995
+	pos = 0.816527128,3.23637819,-0.252033949
 	attPos = 0,0,0
 	attPos0 = -0.908301175,-0.937501848,-2.91606916E-09
-	rot = 0.704415858,-0.0616283678,-0.0616284646,0.704416335
+	rot = 0.704415858,-0.0616283566,-0.0616284534,0.704416335
 	attRot = -0.49999997,-0.49999997,-0.49999997,0.49999997
 	attRot0 = 1.78813934E-07,2.98023171E-08,2.98023295E-08,1
 	mir = 1,1,1
@@ -1083,7 +1083,7 @@ PART
 		deploy = True
 		deployInvert = True
 		partDeployInvert = False
-		authorityLimiter = 100
+		authorityLimiter = 59.7999992
 		stagingEnabled = True
 		EVENTS
 		{
@@ -1112,10 +1112,10 @@ PART
 {
 	part = StandardCtrlSrf_4294343936
 	partName = Part
-	pos = -0.99386549,3.55559874,-0.252032518
+	pos = -0.993865967,3.55559874,-0.252033472
 	attPos = 0,0,0
 	attPos0 = -2.74662066,-0.937501848,-5.30892066E-07
-	rot = 0.704415858,-0.0616283678,-0.0616284646,0.704416335
+	rot = 0.704415858,-0.0616283566,-0.0616284534,0.704416335
 	attRot = -0.49999997,-0.49999997,-0.49999997,0.49999997
 	attRot0 = 1.78813934E-07,2.98023171E-08,2.98023295E-08,1
 	mir = 1,1,1
@@ -1155,7 +1155,7 @@ PART
 		deploy = True
 		deployInvert = True
 		partDeployInvert = False
-		authorityLimiter = 100.099998
+		authorityLimiter = 60.2999992
 		stagingEnabled = True
 		EVENTS
 		{
@@ -1184,10 +1184,10 @@ PART
 {
 	part = wingConnector2_4294334924
 	partName = Part
-	pos = 2.06953359,3.07865262,0.685469627
+	pos = 2.06953359,3.07865214,0.685469151
 	attPos = -0.13037315,-4.76837158E-07,-0.0420411825
 	attPos0 = 0.309624851,-0.0336319134,0.536285758
-	rot = -0.0616285019,0.704416096,0.704416096,-0.0616283529
+	rot = -0.0616284944,0.704416096,0.704416096,-0.0616283603
 	attRot = 0,-0.57357657,0,0.819152176
 	attRot0 = -8.94069672E-08,0.99619478,-5.96046448E-08,-0.0871557593
 	mir = 1,1,1
@@ -1239,7 +1239,7 @@ PART
 {
 	part = wingConnector5_4294334890
 	partName = Part
-	pos = 5.76258326,3.72983694,1.15244818
+	pos = 5.76258516,3.72983742,1.15244806
 	attPos = 0,0,0
 	attPos0 = -3.75001621,0.466977119,-3.54547097E-07
 	rot = -0.0616284572,0.704416096,0.704416096,-0.061628323
@@ -1290,7 +1290,7 @@ PART
 {
 	part = wingConnector5_4294334856
 	partName = Part
-	pos = 5.76277971,3.72987127,0.209111691
+	pos = 5.76278162,3.72987151,0.209110856
 	attPos = 0,0,0
 	attPos0 = -3.75021601,-0.476357639,-8.70729536E-07
 	rot = -0.0616284572,0.704416096,0.704416096,-0.061628323
@@ -1342,7 +1342,7 @@ PART
 {
 	part = StandardCtrlSrf_4294334822
 	partName = Part
-	pos = 6.71368313,3.89754081,-0.25963974
+	pos = 6.71368599,3.89754128,-0.259640694
 	attPos = 0,0,0
 	attPos0 = -0.965569973,-0.468751103,-1.08170205E-07
 	rot = -0.0616285056,0.704416215,0.704415977,-0.0616283715
@@ -1385,7 +1385,7 @@ PART
 		deploy = False
 		deployInvert = False
 		partDeployInvert = False
-		authorityLimiter = 100
+		authorityLimiter = 30
 		stagingEnabled = True
 		EVENTS
 		{
@@ -1414,7 +1414,7 @@ PART
 {
 	part = StandardCtrlSrf_4294334790
 	partName = Part
-	pos = 2.96403694,3.23637819,-0.252033472
+	pos = 2.96403742,3.23637819,-0.252034426
 	attPos = 0,0,0
 	attPos0 = -0.908301175,-0.937501848,-2.91606916E-09
 	rot = -0.0616285056,0.704416215,0.704415977,-0.0616283715
@@ -1457,7 +1457,7 @@ PART
 		deploy = True
 		deployInvert = True
 		partDeployInvert = False
-		authorityLimiter = 100
+		authorityLimiter = 59.7999992
 		stagingEnabled = True
 		EVENTS
 		{
@@ -1486,7 +1486,7 @@ PART
 {
 	part = StandardCtrlSrf_4294338030
 	partName = Part
-	pos = 4.77443027,3.55559874,-0.252033234
+	pos = 4.77443218,3.55559874,-0.252034187
 	attPos = 0,0,0
 	attPos0 = -2.74662066,-0.937501848,-5.30892066E-07
 	rot = -0.0616285056,0.704416215,0.704415977,-0.0616283715
@@ -1529,7 +1529,7 @@ PART
 		deploy = True
 		deployInvert = True
 		partDeployInvert = False
-		authorityLimiter = 100.099998
+		authorityLimiter = 60.2999992
 		stagingEnabled = True
 		EVENTS
 		{
@@ -1558,10 +1558,10 @@ PART
 {
 	part = GearFree_4294332004
 	partName = Part
-	pos = 1.89028192,3.15627241,4.08784008
+	pos = 1.89028192,3.15627241,4.08784103
 	attPos = 0,0,0
 	attPos0 = 0,2.25623679,0.416624784
-	rot = 0.0128238499,2.82852852E-10,2.20552412E-08,0.999917865
+	rot = 0.0128238499,2.82852852E-10,2.2055243E-08,0.999917865
 	attRot = 0.0928643197,6.35001648E-16,1.6554269E-15,0.995678782
 	attRot0 = -0.697980821,1.57954165E-08,1.53954023E-08,0.716116488
 	mir = 1,1,1
@@ -1668,10 +1668,10 @@ PART
 {
 	part = GearFixed_4294321326
 	partName = Part
-	pos = 1.29028189,3.51955843,-0.0124851465
+	pos = 1.29028189,3.51955843,-0.0124861002
 	attPos = 0.0181273818,-1.01644254,0.0533391126
 	attPos0 = -0.618127406,0.284855485,0
-	rot = 0.00555539131,-5.96037353E-08,3.31121797E-10,0.999984622
+	rot = 0.00555539131,-5.96037424E-08,3.31121797E-10,0.999984741
 	attRot = 0,0,0,1
 	attRot0 = -0.703167617,-4.19120632E-08,4.23803392E-08,0.711024106
 	mir = 1,1,1
@@ -1783,10 +1783,10 @@ PART
 {
 	part = GearFixed_4294320952
 	partName = Part
-	pos = 2.49028206,3.51955843,-0.0124856234
+	pos = 2.49028206,3.51955843,-0.012486577
 	attPos = -0.0181273818,-1.01644289,0.0533391126
 	attPos0 = 0.618127406,0.284855425,0
-	rot = 8.82849349E-11,0.999984741,0.00555539131,-1.03314441E-07
+	rot = 8.82884876E-11,0.999984741,0.00555539131,-1.0331442E-07
 	attRot = 0,0,0,1
 	attRot0 = 7.31167589E-08,0.711024106,-0.703167617,-7.29919023E-08
 	mir = 1,1,-1
@@ -1898,7 +1898,7 @@ PART
 {
 	part = SurfAntenna_4294309540
 	partName = Part
-	pos = 1.89028192,3.81139994,-4.10451651
+	pos = 1.89028192,3.81139994,-4.10451937
 	attPos = 0,0,0
 	attPos0 = 0,-3.95451713,0.213870332
 	rot = 0.702582121,0.0798651874,-0.702582121,-0.0798651874
@@ -2032,118 +2032,9 @@ PART
 }
 PART
 {
-	part = radialDrogue_4294302214
-	partName = Part
-	pos = 1.89028192,4.18011332,-0.555459976
-	attPos = 0,0,0
-	attPos0 = 0,-0.470663369,-0.557175934
-	rot = -0.707885623,-3.1586513E-08,-3.96886257E-08,-0.706327319
-	attRot = 0,0,0,1
-	attRot0 = 0.0560136177,-5.0644072E-08,-2.84122259E-09,-0.998430073
-	mir = 1,1,1
-	symMethod = Mirror
-	autostrutMode = Off
-	rigidAttachment = False
-	istg = 0
-	resPri = 0
-	dstg = 0
-	sidx = 0
-	sqor = 0
-	sepI = -1
-	attm = 1
-	modCost = 0
-	modMass = 0
-	modSize = 0,0,0
-	srfN = srfAttach,airplaneTail_4294335532
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-	}
-	PARTDATA
-	{
-	}
-	MODULE
-	{
-		name = ModuleParachute
-		isEnabled = True
-		persistentState = STOWED
-		animTime = 0
-		minAirPressureToOpen = 0.0199999996
-		deployAltitude = 2500
-		spreadAngle = 7
-		automateSafeDeploy = 0
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-			DeployAction
-			{
-				actionGroup = None
-			}
-			CutAction
-			{
-				actionGroup = None
-			}
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleTestSubject
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleDragModifier
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleDragModifier
-		isEnabled = True
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-}
-PART
-{
 	part = miniJetEngine_4294335342
 	partName = Part
-	pos = 0.962958932,3.57289743,-0.401962996
+	pos = 0.962958932,3.57289743,-0.401963949
 	attPos = 0,0,0
 	attPos0 = 2.79396986E-08,-0.468750417,1.11758794E-07
 	rot = 0.707106829,-2.99471391E-22,2.99471391E-22,0.707106829
@@ -2153,11 +2044,11 @@ PART
 	symMethod = Mirror
 	autostrutMode = Off
 	rigidAttachment = False
-	istg = 1
+	istg = 0
 	resPri = 0
 	dstg = 0
 	sidx = 0
-	sqor = 1
+	sqor = 0
 	sepI = -1
 	attm = 0
 	modCost = 0
@@ -2258,7 +2149,7 @@ PART
 {
 	part = miniJetEngine_4294283778
 	partName = Part
-	pos = 2.81760502,3.57289767,-0.401962996
+	pos = 2.81760502,3.57289767,-0.401963949
 	attPos = 0,0,0
 	attPos0 = -9.12695342E-08,-0.468750417,4.28406395E-08
 	rot = 0.707106888,0,0,0.707106769
@@ -2268,11 +2159,11 @@ PART
 	symMethod = Mirror
 	autostrutMode = Off
 	rigidAttachment = False
-	istg = 1
+	istg = 0
 	resPri = 0
 	dstg = 0
 	sidx = 0
-	sqor = 1
+	sqor = 0
 	sepI = -1
 	attm = 0
 	modCost = 0
@@ -2363,6 +2254,87 @@ PART
 		}
 		ACTIONS
 		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+}
+PART
+{
+	part = sensorBarometer_4294754776
+	partName = Part
+	pos = 1.30693698,3.41659069,1.57309127
+	attPos = 0,0,0
+	attPos0 = -0.583344936,0.853989065,0.156306639
+	rot = -0.0922955275,0.701057613,0.0922955871,0.701057315
+	attRot = 0,0,-0.707106769,0.707106769
+	attRot0 = -0.560985148,0.560985386,-0.430459708,0.430459619
+	mir = 1,1,1
+	symMethod = Mirror
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = -1
+	resPri = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = -1
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	srfN = srfAttach,MK1Fuselage_4294392736
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleEnviroSensor
+		isEnabled = True
+		sensorActive = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			ToggleAction
+			{
+				actionGroup = None
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleScienceExperiment
+		isEnabled = True
+		Deployed = False
+		Inoperable = False
+		cooldownToGo = 0
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			DeployAction
+			{
+				actionGroup = None
+			}
+			ResetAction
+			{
+				actionGroup = None
+			}
 		}
 		UPGRADESAPPLIED
 		{
