@@ -8,7 +8,7 @@ GAME
 	Mode = CAREER
 	Status = 1
 	Seed = 1393576631
-	scene = 7
+	scene = 5
 	editor = None
 	flag = ThreePounds/Flags/logo
 	launchID = 71
@@ -187,7 +187,7 @@ GAME
 	{
 		name = ContractSystem
 		scene = 7, 8, 5, 6
-		update = 13187355.860286646
+		update = 13182991.453588456
 		version = 1.2.1
 		WEIGHTS
 		{
@@ -714,7 +714,7 @@ GAME
 					{
 						name = ParameterDelegate`1
 						id = Situation: Landed
-						state = Incomplete
+						state = Complete
 						disableOnStateChange = False
 						values = 0,0,0,0,0
 						ContractIdentifier = FieldResearch.FS_HardScience
@@ -1044,7 +1044,7 @@ GAME
 						{
 							name = ParameterDelegate`1
 							id = Situation: Landed
-							state = Incomplete
+							state = Complete
 							disableOnStateChange = False
 							values = 0,0,0,0,0
 							ContractIdentifier = BasesandStations.SurfaceSample
@@ -28189,7 +28189,7 @@ GAME
 	FLIGHTSTATE
 	{
 		version = 1.2.1
-		UT = 13187363.960286465
+		UT = 13182999.533588275
 		activeVessel = 19
 		mapViewFiltering = 7166
 		commNetUIModeTracking = None
@@ -52476,37 +52476,37 @@ GAME
 			pid = c7558e60c679404a8f0e509ce332b4c0
 			name = Acorn Mud B00
 			type = Lander
-			sit = ORBITING
-			landed = False
+			sit = LANDED
+			landed = True
 			landedAt = 
 			splashed = False
-			met = 8023.4635989088565
+			met = 3659.0369007196277
 			lct = 13179340.476687556
-			lastUT = 13187363.960286465
+			lastUT = 13182999.533588275
 			root = 0
-			lat = -85.537365430631965
-			lon = 109.60742527905458
-			alt = 25835.125250836179
-			hgt = -1
-			nrm = 0.00159536302,0.473371089,0.8808617
-			rot = 0.415935755,-0.422136843,0.754317999,0.282493353
-			CoM = -2.23517418E-06,-0.04106462,1.74938512
+			lat = 12.35155697782365
+			lon = 110.0388017439283
+			alt = 3775.768673661616
+			hgt = 4.57721567
+			nrm = 0.000583514571,-0.000994205475,-0.999999404
+			rot = -0.743850827,0.624714017,-0.232971281,0.046292711
+			CoM = -1.60783529E-05,-0.0409203768,1.81219649
 			stg = 1
 			prst = False
 			ref = 253994234
 			ctrl = True
-			cPch = 0.05461681
-			cHdg = -6.677744
+			cPch = -0.02200045
+			cHdg = 5.181999
 			cMod = 0
 			ORBIT
 			{
-				SMA = 82567.482718920684
-				ECC = 0.041131023984925345
-				INC = 87.945981243748221
-				LPE = 101.12474720629416
-				LAN = 283.40760480380084
-				MNA = 2.8561982001333477
-				EPH = 13187363.960286465
+				SMA = 31941.126901713113
+				ECC = 0.99660972980721918
+				INC = 12.351549626281185
+				LPE = 269.9997294515465
+				LAN = 2.3119863522519495
+				MNA = -3.1415921604053891
+				EPH = 13182999.533588275
 				REF = 3
 			}
 			PART
@@ -52533,8 +52533,8 @@ GAME
 				attN = bottom, 44
 				mass = 1
 				shielded = False
-				temp = 147.87173478580783
-				tempExt = 148.24241773554346
+				temp = 178.89194969115113
+				tempExt = 179.38543988782939
 				tempExtUnexp = 305.05507474090075
 				expt = 0.5
 				state = 0
@@ -52877,8 +52877,8 @@ GAME
 				srfN = srfAttach, 0
 				mass = 0.00499999989
 				shielded = False
-				temp = 147.88037761927856
-				tempExt = 148.19088515880898
+				temp = 178.82343787514756
+				tempExt = 179.27927517653063
 				tempExtUnexp = 305.05507474090075
 				expt = 0.5
 				state = 0
@@ -52922,8 +52922,8 @@ GAME
 				attN = top, -1
 				mass = 0.25
 				shielded = False
-				temp = 147.55550337699574
-				tempExt = 147.61406690930562
+				temp = 181.30793034134584
+				tempExt = 181.11505231903959
 				tempExtUnexp = 305.05507474090075
 				expt = 0.5
 				state = 0
@@ -52969,8 +52969,8 @@ GAME
 				attN = bottom, 4
 				mass = 0.100000001
 				shielded = False
-				temp = 146.29792397502402
-				tempExt = 146.35400338450805
+				temp = 181.47190978938053
+				tempExt = 181.54914426622489
 				tempExtUnexp = 305.05507474090075
 				expt = 0.5
 				state = 0
@@ -53084,8 +53084,8 @@ GAME
 				attN = bottom, 5
 				mass = 0.200000003
 				shielded = False
-				temp = 146.26673418607365
-				tempExt = 146.40747813024993
+				temp = 181.76479588685618
+				tempExt = 181.79868789818548
 				tempExtUnexp = 305.05507474090075
 				expt = 0.5
 				state = 0
@@ -53180,8 +53180,8 @@ GAME
 				attN = bottom, -1
 				mass = 0.125
 				shielded = False
-				temp = 146.29658722350962
-				tempExt = 146.33970899514594
+				temp = 181.67319972618725
+				tempExt = 181.69171268149364
 				tempExtUnexp = 305.05507474090075
 				expt = 0.5
 				state = 0
@@ -53296,8 +53296,8 @@ GAME
 				attN = top, -1
 				mass = 0.125
 				shielded = False
-				temp = 146.39048209762319
-				tempExt = 146.54290025476649
+				temp = 181.74161522698762
+				tempExt = 182.0474863399613
 				tempExtUnexp = 305.05507474090075
 				expt = 0.5
 				state = 0
@@ -53340,8 +53340,8 @@ GAME
 				srfN = srfAttach, 6
 				mass = 0.0500000007
 				shielded = False
-				temp = 146.41511009205169
-				tempExt = 146.68146377199955
+				temp = 181.76751423281164
+				tempExt = 182.47192573235205
 				tempExtUnexp = 305.05507474090075
 				expt = 0.5
 				state = 0
@@ -53365,7 +53365,7 @@ GAME
 					name = ModuleWheelBase
 					isEnabled = True
 					wheelType = LEG
-					isGrounded = False
+					isGrounded = True
 					autoFriction = False
 					frictionMultiplier = 1
 					stagingEnabled = True
@@ -53389,7 +53389,7 @@ GAME
 					isEnabled = True
 					springTweakable = 1
 					damperTweakable = 1
-					suspensionPos = (0, -0.120109163, 2.78353691E-05)
+					suspensionPos = (1.43348905E-06, -0.120121837, -0.770463586)
 					autoBoost = 0
 					stagingEnabled = True
 					EVENTS
@@ -53407,9 +53407,9 @@ GAME
 					name = ModuleWheelDeployment
 					isEnabled = True
 					shieldedCanDeploy = False
-					stateString = Retracted
+					stateString = Deployed
 					stagingEnabled = True
-					position = 0
+					position = 1
 					EVENTS
 					{
 					}
@@ -53494,8 +53494,8 @@ GAME
 				srfN = srfAttach, 6
 				mass = 0.00499999989
 				shielded = False
-				temp = 146.40646344425485
-				tempExt = 146.47586394705476
+				temp = 181.75872018114342
+				tempExt = 181.90018554834054
 				tempExtUnexp = 305.05507474090075
 				expt = 0.5
 				state = 0
@@ -53574,8 +53574,8 @@ GAME
 				srfN = srfAttach, 6
 				mass = 0.00499999989
 				shielded = False
-				temp = 146.40646344425485
-				tempExt = 146.47586394705476
+				temp = 181.75872018114342
+				tempExt = 181.90018554834054
 				tempExtUnexp = 305.05507474090075
 				expt = 0.5
 				state = 0
@@ -53654,8 +53654,8 @@ GAME
 				srfN = srfAttach, 6
 				mass = 0.00499999989
 				shielded = False
-				temp = 146.40656264894869
-				tempExt = 146.47891638569348
+				temp = 181.76289501519977
+				tempExt = 182.02290731922517
 				tempExtUnexp = 305.05507474090075
 				expt = 0.5
 				state = 0
@@ -53736,8 +53736,8 @@ GAME
 				attN = top, -1
 				mass = 0.125
 				shielded = False
-				temp = 146.41884285245149
-				tempExt = 146.54930525836735
+				temp = 181.55617473284929
+				tempExt = 181.56369270270301
 				tempExtUnexp = 305.05507474090075
 				expt = 0.5
 				state = 0
@@ -53780,8 +53780,8 @@ GAME
 				srfN = srfAttach, 11
 				mass = 0.0500000007
 				shielded = False
-				temp = 146.45461745072856
-				tempExt = 146.82658455588734
+				temp = 181.53859792269054
+				tempExt = 181.67274018867789
 				tempExtUnexp = 305.05507474090075
 				expt = 0.5
 				state = 0
@@ -53805,7 +53805,7 @@ GAME
 					name = ModuleWheelBase
 					isEnabled = True
 					wheelType = LEG
-					isGrounded = False
+					isGrounded = True
 					autoFriction = False
 					frictionMultiplier = 1
 					stagingEnabled = True
@@ -53829,7 +53829,7 @@ GAME
 					isEnabled = True
 					springTweakable = 1
 					damperTweakable = 1
-					suspensionPos = (0, -0.120109163, 2.78353691E-05)
+					suspensionPos = (7.1823365E-07, -0.120108604, -0.774621844)
 					autoBoost = 0
 					stagingEnabled = True
 					EVENTS
@@ -53847,9 +53847,9 @@ GAME
 					name = ModuleWheelDeployment
 					isEnabled = True
 					shieldedCanDeploy = False
-					stateString = Retracted
+					stateString = Deployed
 					stagingEnabled = True
-					position = 0
+					position = 1
 					EVENTS
 					{
 					}
@@ -53934,8 +53934,8 @@ GAME
 				srfN = srfAttach, 11
 				mass = 0.00499999989
 				shielded = False
-				temp = 146.44041729120735
-				tempExt = 146.49314504912849
+				temp = 181.55239783726913
+				tempExt = 181.51840228351017
 				tempExtUnexp = 305.05507474090075
 				expt = 0.5
 				state = 0
@@ -54014,8 +54014,8 @@ GAME
 				srfN = srfAttach, 11
 				mass = 0.00499999989
 				shielded = False
-				temp = 146.4404172927749
-				tempExt = 146.49314505193047
+				temp = 181.55239783726913
+				tempExt = 181.51840228351017
 				tempExtUnexp = 305.05507474090075
 				expt = 0.5
 				state = 0
@@ -54094,8 +54094,8 @@ GAME
 				srfN = srfAttach, 11
 				mass = 0.00499999989
 				shielded = False
-				temp = 146.44064716672776
-				tempExt = 146.49985462746346
+				temp = 181.55239783726913
+				tempExt = 181.51840228351017
 				tempExtUnexp = 305.05507474090075
 				expt = 0.5
 				state = 0
@@ -54174,8 +54174,8 @@ GAME
 				srfN = srfAttach, 5
 				mass = 0.075000003
 				shielded = False
-				temp = 146.35300338919276
-				tempExt = 146.3268268872751
+				temp = 181.48921225532467
+				tempExt = 181.58609727587617
 				tempExtUnexp = 305.05507474090075
 				expt = 0.5
 				state = 0
@@ -54197,7 +54197,7 @@ GAME
 				RESOURCE
 				{
 					name = MonoPropellant
-					amount = 29.582975714433278
+					amount = 31.882671265760763
 					maxAmount = 60
 					flowState = True
 					isTweakable = True
@@ -54229,8 +54229,8 @@ GAME
 				srfN = srfAttach, 5
 				mass = 0.075000003
 				shielded = False
-				temp = 146.35300786510265
-				tempExt = 146.3268285331238
+				temp = 181.48873496197481
+				tempExt = 181.57591506636791
 				tempExtUnexp = 305.05507474090075
 				expt = 0.5
 				state = 0
@@ -54252,7 +54252,7 @@ GAME
 				RESOURCE
 				{
 					name = MonoPropellant
-					amount = 29.582975714433278
+					amount = 31.882671265760763
 					maxAmount = 60
 					flowState = True
 					isTweakable = True
@@ -54286,8 +54286,8 @@ GAME
 				attN = bottom, 19
 				mass = 0.25
 				shielded = False
-				temp = 146.29362143015183
-				tempExt = 146.63809025372737
+				temp = 181.81418102033157
+				tempExt = 182.07301042778309
 				tempExtUnexp = 305.05507474090075
 				expt = 0.5
 				state = 0
@@ -54357,7 +54357,7 @@ GAME
 				RESOURCE
 				{
 					name = LiquidFuel
-					amount = 2.4832741147801078
+					amount = 15.334172131684245
 					maxAmount = 180
 					flowState = True
 					isTweakable = True
@@ -54368,7 +54368,7 @@ GAME
 				RESOURCE
 				{
 					name = Oxidizer
-					amount = 3.0626089795165026
+					amount = 18.769262867804514
 					maxAmount = 220
 					flowState = True
 					isTweakable = True
@@ -54402,8 +54402,8 @@ GAME
 				attN = bottom, 18
 				mass = 0.0399999991
 				shielded = False
-				temp = 146.28999336721108
-				tempExt = 146.46019249728101
+				temp = 181.83725842608069
+				tempExt = 182.09983123580739
 				tempExtUnexp = 305.05507474090075
 				expt = 0.5
 				state = 0
@@ -54448,8 +54448,8 @@ GAME
 				attN = bottom, -1
 				mass = 0.100000001
 				shielded = False
-				temp = 146.24670910791997
-				tempExt = 146.30960422560716
+				temp = 181.85341552754733
+				tempExt = 182.11062903065465
 				tempExtUnexp = 305.05507474090075
 				expt = 0.5
 				state = 1
@@ -54608,8 +54608,8 @@ GAME
 				srfN = srfAttach, 18
 				mass = 0.0500000007
 				shielded = False
-				temp = 146.28863612559158
-				tempExt = 146.85862710560133
+				temp = 181.85418338167722
+				tempExt = 182.26154223853521
 				tempExtUnexp = 305.05507474090075
 				expt = 0.5
 				state = 0
@@ -54633,7 +54633,7 @@ GAME
 					name = ModuleWheelBase
 					isEnabled = True
 					wheelType = LEG
-					isGrounded = False
+					isGrounded = True
 					autoFriction = False
 					frictionMultiplier = 1
 					stagingEnabled = True
@@ -54657,7 +54657,7 @@ GAME
 					isEnabled = True
 					springTweakable = 1
 					damperTweakable = 1
-					suspensionPos = (0, -0.120109163, 2.78353691E-05)
+					suspensionPos = (4.44947682E-06, -0.120103836, -0.773949921)
 					autoBoost = 0
 					stagingEnabled = True
 					EVENTS
@@ -54675,9 +54675,9 @@ GAME
 					name = ModuleWheelDeployment
 					isEnabled = True
 					shieldedCanDeploy = False
-					stateString = Retracted
+					stateString = Deployed
 					stagingEnabled = True
-					position = 0
+					position = 1
 					EVENTS
 					{
 					}
@@ -54763,8 +54763,8 @@ GAME
 				attN = bottom01, 18
 				mass = 0.0299999993
 				shielded = False
-				temp = 146.30495896726052
-				tempExt = 146.80195512076438
+				temp = 181.83504025915971
+				tempExt = 182.1933416359806
 				tempExtUnexp = 305.05507474090075
 				expt = 0.5
 				state = 0
@@ -54807,8 +54807,8 @@ GAME
 				srfN = srfAttach, 18
 				mass = 0.0500000007
 				shielded = False
-				temp = 146.26517947961946
-				tempExt = 146.50168305372458
+				temp = 181.8381018840162
+				tempExt = 181.98095451087491
 				tempExtUnexp = 305.05507474090075
 				expt = 0.5
 				state = 0
@@ -54881,8 +54881,8 @@ GAME
 				srfN = srfAttach, 18
 				mass = 0.0500000007
 				shielded = False
-				temp = 146.26464696025462
-				tempExt = 146.50150737990674
+				temp = 181.83638673703413
+				tempExt = 181.96206007235466
 				tempExtUnexp = 305.05507474090075
 				expt = 0.5
 				state = 0
@@ -54955,8 +54955,8 @@ GAME
 				srfN = srfAttach, 18
 				mass = 0.0299999993
 				shielded = False
-				temp = 146.25240166915495
-				tempExt = 146.49930273173979
+				temp = 181.84148626787913
+				tempExt = 181.9650913915209
 				tempExtUnexp = 305.05507474090075
 				expt = 0.5
 				state = 0
@@ -55029,8 +55029,8 @@ GAME
 				srfN = srfAttach, 18
 				mass = 0.0299999993
 				shielded = False
-				temp = 146.25633212245671
-				tempExt = 146.50057752590354
+				temp = 181.84147199416364
+				tempExt = 181.96508676374523
 				tempExtUnexp = 305.05507474090075
 				expt = 0.5
 				state = 0
@@ -55105,8 +55105,8 @@ GAME
 				attN = bottom, 28
 				mass = 0.25
 				shielded = False
-				temp = 146.236106503342
-				tempExt = 146.24273670548925
+				temp = 181.81960647589975
+				tempExt = 182.10618752182808
 				tempExtUnexp = 305.05507474090075
 				expt = 0.5
 				state = 0
@@ -55176,7 +55176,7 @@ GAME
 				RESOURCE
 				{
 					name = LiquidFuel
-					amount = 2.483274114779888
+					amount = 15.334172131683903
 					maxAmount = 180
 					flowState = True
 					isTweakable = True
@@ -55187,7 +55187,7 @@ GAME
 				RESOURCE
 				{
 					name = Oxidizer
-					amount = 3.0626089795165026
+					amount = 18.769262867804514
 					maxAmount = 220
 					flowState = True
 					isTweakable = True
@@ -55221,8 +55221,8 @@ GAME
 				attN = bottom, 27
 				mass = 0.0399999991
 				shielded = False
-				temp = 146.23056061638724
-				tempExt = 146.22161846823295
+				temp = 181.84412636978539
+				tempExt = 182.09870759490062
 				tempExtUnexp = 305.05507474090075
 				expt = 0.5
 				state = 0
@@ -55267,8 +55267,8 @@ GAME
 				attN = bottom, -1
 				mass = 0.100000001
 				shielded = False
-				temp = 146.21141459687271
-				tempExt = 146.25982895591315
+				temp = 181.86081786342584
+				tempExt = 182.13056150898154
 				tempExtUnexp = 305.05507474090075
 				expt = 0.5
 				state = 1
@@ -55427,8 +55427,8 @@ GAME
 				srfN = srfAttach, 27
 				mass = 0.0500000007
 				shielded = False
-				temp = 146.20468079166307
-				tempExt = 146.22567277377271
+				temp = 181.86432674853688
+				tempExt = 182.32764070180332
 				tempExtUnexp = 305.05507474090075
 				expt = 0.5
 				state = 0
@@ -55452,7 +55452,7 @@ GAME
 					name = ModuleWheelBase
 					isEnabled = True
 					wheelType = LEG
-					isGrounded = False
+					isGrounded = True
 					autoFriction = False
 					frictionMultiplier = 1
 					stagingEnabled = True
@@ -55476,7 +55476,7 @@ GAME
 					isEnabled = True
 					springTweakable = 1
 					damperTweakable = 1
-					suspensionPos = (0, -0.120109163, 2.78353691E-05)
+					suspensionPos = (-3.10837709E-06, -0.120108664, -0.771410525)
 					autoBoost = 0
 					stagingEnabled = True
 					EVENTS
@@ -55494,9 +55494,9 @@ GAME
 					name = ModuleWheelDeployment
 					isEnabled = True
 					shieldedCanDeploy = False
-					stateString = Retracted
+					stateString = Deployed
 					stagingEnabled = True
-					position = 0
+					position = 1
 					EVENTS
 					{
 					}
@@ -55582,8 +55582,8 @@ GAME
 				attN = bottom01, 27
 				mass = 0.0299999993
 				shielded = False
-				temp = 146.22638708925467
-				tempExt = 146.2569360419605
+				temp = 181.84442907224792
+				tempExt = 182.26858077410387
 				tempExtUnexp = 305.05507474090075
 				expt = 0.5
 				state = 0
@@ -55626,8 +55626,8 @@ GAME
 				srfN = srfAttach, 27
 				mass = 0.0500000007
 				shielded = False
-				temp = 146.20879008142586
-				tempExt = 146.2160057503223
+				temp = 181.84314396651013
+				tempExt = 181.98679463308406
 				tempExtUnexp = 305.05507474090075
 				expt = 0.5
 				state = 0
@@ -55700,8 +55700,8 @@ GAME
 				srfN = srfAttach, 27
 				mass = 0.0500000007
 				shielded = False
-				temp = 146.21065435802231
-				tempExt = 146.30297354824725
+				temp = 181.84486795394878
+				tempExt = 182.00576831138207
 				tempExtUnexp = 305.05507474090075
 				expt = 0.5
 				state = 0
@@ -55774,8 +55774,8 @@ GAME
 				srfN = srfAttach, 27
 				mass = 0.0299999993
 				shielded = False
-				temp = 146.20056264118219
-				tempExt = 146.21370494439066
+				temp = 181.84839181474746
+				tempExt = 181.98998007957894
 				tempExtUnexp = 305.05507474090075
 				expt = 0.5
 				state = 0
@@ -55848,8 +55848,8 @@ GAME
 				srfN = srfAttach, 27
 				mass = 0.0299999993
 				shielded = False
-				temp = 146.19107935845389
-				tempExt = 146.21062915099435
+				temp = 181.84840788796271
+				tempExt = 181.98998529078074
 				tempExtUnexp = 305.05507474090075
 				expt = 0.5
 				state = 0
@@ -55923,8 +55923,8 @@ GAME
 				attN = top, 3
 				mass = 0.100000001
 				shielded = True
-				temp = 155.67978828385134
-				tempExt = 155.70059712190582
+				temp = 178.89705658150945
+				tempExt = 178.91082873168264
 				tempExtUnexp = 305.05507474090075
 				expt = 0
 				state = 0
@@ -55970,7 +55970,7 @@ GAME
 					isEnabled = True
 					actuatorModeCycle = 0
 					authorityLimiter = 100
-					stateString = Running
+					stateString = Idle
 					stagingEnabled = True
 					WheelState = Active
 					EVENTS
@@ -56086,7 +56086,7 @@ GAME
 				RESOURCE
 				{
 					name = ElectricCharge
-					amount = 5.6836402613593426
+					amount = 9.9999809523813781
 					maxAmount = 10
 					flowState = True
 					isTweakable = True
@@ -56119,8 +56119,8 @@ GAME
 				attN = top, 36
 				mass = 0.0500000007
 				shielded = True
-				temp = 155.70888759354574
-				tempExt = 155.71227815850838
+				temp = 178.89352394656737
+				tempExt = 178.90312477606165
 				tempExtUnexp = 305.05507474090075
 				expt = 0.5
 				state = 0
@@ -56145,7 +56145,7 @@ GAME
 					isEnabled = True
 					actuatorModeCycle = 0
 					authorityLimiter = 100
-					stateString = Running
+					stateString = Idle
 					stagingEnabled = True
 					WheelState = Active
 					EVENTS
@@ -56197,8 +56197,8 @@ GAME
 				srfN = srfAttach, 36
 				mass = 0.00499999989
 				shielded = True
-				temp = 155.70566446665174
-				tempExt = 155.70981784415466
+				temp = 178.90399586878755
+				tempExt = 178.9084482424706
 				tempExtUnexp = 305.05507474090075
 				expt = 0.5
 				state = 0
@@ -56286,8 +56286,8 @@ GAME
 				srfN = srfAttach, 36
 				mass = 0.00499999989
 				shielded = True
-				temp = 155.72534320333767
-				tempExt = 155.71643956876119
+				temp = 178.892426922222
+				tempExt = 178.90661837956367
 				tempExtUnexp = 305.05507474090075
 				expt = 0.5
 				state = 0
@@ -56376,8 +56376,8 @@ GAME
 				srfN = srfAttach, 36
 				mass = 0.00499999989
 				shielded = True
-				temp = 155.69698479616144
-				tempExt = 155.70712293815464
+				temp = 178.94525697313861
+				tempExt = 178.92967551624696
 				tempExtUnexp = 305.05507474090075
 				expt = 0.5
 				state = 0
@@ -56399,7 +56399,7 @@ GAME
 				RESOURCE
 				{
 					name = ElectricCharge
-					amount = 56.836402613589222
+					amount = 99.999809523813781
 					maxAmount = 100
 					flowState = True
 					isTweakable = True
@@ -56431,8 +56431,8 @@ GAME
 				srfN = srfAttach, 36
 				mass = 0.00499999989
 				shielded = True
-				temp = 155.69698479616144
-				tempExt = 155.70712293815464
+				temp = 178.94525697313861
+				tempExt = 178.92967551624696
 				tempExtUnexp = 305.05507474090075
 				expt = 0.5
 				state = 0
@@ -56454,7 +56454,7 @@ GAME
 				RESOURCE
 				{
 					name = ElectricCharge
-					amount = 56.836402613589222
+					amount = 99.999809523813781
 					maxAmount = 100
 					flowState = True
 					isTweakable = True
@@ -56485,8 +56485,8 @@ GAME
 				srfN = srfAttach, 36
 				mass = 0.00499999989
 				shielded = True
-				temp = 155.69737354333023
-				tempExt = 155.70724363784376
+				temp = 178.93748351343004
+				tempExt = 178.92682870821528
 				tempExtUnexp = 305.05507474090075
 				expt = 0.5
 				state = 0
@@ -56559,8 +56559,8 @@ GAME
 				attN = bottom, -1
 				mass = 0.0700000003
 				shielded = False
-				temp = 147.96500012065852
-				tempExt = 148.24696094280603
+				temp = 178.87651401186906
+				tempExt = 179.49352197804217
 				tempExtUnexp = 305.05507474090075
 				expt = 0.5
 				state = 0
@@ -56683,8 +56683,8 @@ GAME
 				attN = bottom, 0
 				mass = 0.0500000007
 				shielded = False
-				temp = 147.66145057633619
-				tempExt = 147.92638406353464
+				temp = 178.97833057653435
+				tempExt = 179.03165648723703
 				tempExtUnexp = 305.05507474090075
 				expt = 0.5
 				state = 0
@@ -56764,11 +56764,11 @@ GAME
 			ACTIONGROUPS
 			{
 				Stage = False, 0
-				Gear = False, 13183108.7335858
+				Gear = True, 13182877.833591
 				Light = False, 0
-				RCS = False, 13187352.3402867
-				SAS = True, 13187280.4715324
-				Brakes = False, 13187355.2802867
+				RCS = False, 13179362.6366871
+				SAS = False, 13182882.0335909
+				Brakes = False, 0
 				Abort = False, 0
 				Custom01 = False, 0
 				Custom02 = False, 0
@@ -56792,16 +56792,11 @@ GAME
 			FLIGHTPLAN
 			{
 			}
-			TARGET
-			{
-				type = Vessel
-				vesselID = 370353f1-a5d9-4ad1-b27d-d829cb7d7ce8
-			}
 			CTRLSTATE
 			{
-				pitch = -0.000353714393
-				yaw = 0.021173127
-				roll = -0.0128470892
+				pitch = 0
+				yaw = 0
+				roll = 0
 				trimPitch = 0
 				trimYaw = 0
 				trimRoll = 0
