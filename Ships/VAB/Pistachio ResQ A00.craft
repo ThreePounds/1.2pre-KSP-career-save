@@ -1,8 +1,8 @@
 ship = Pistachio ResQ A00
-version = 1.2.0
+version = 1.2.1
 description = 
 type = VAB
-size = 2.33928084,10.7527838,2.33928156
+size = 2.33928132,10.7527838,2.33928204
 PART
 {
 	part = stackDecoupler_4294513548
@@ -663,6 +663,7 @@ PART
 	modMass = -2.79396772E-09
 	modSize = 0,0,0
 	link = liquidEngine3_4294506944
+	link = SurfAntenna_4294513852
 	attN = top,ServiceBay.125_4294525680
 	attN = bottom,liquidEngine3_4294506944
 	EVENTS
@@ -1616,7 +1617,7 @@ PART
 {
 	part = basicFin_4294473608
 	partName = Part
-	pos = -0.0351249352,2.21772003,-0.614988804
+	pos = -0.0351249352,2.21772003,-0.614989102
 	attPos = 0,0,0
 	attPos0 = -5.96046519E-08,-0.741477966,-0.619637132
 	rot = -4.21468371E-08,0.70710665,4.21468656E-08,-0.707107127
@@ -1669,7 +1670,7 @@ PART
 {
 	part = basicFin_4294473316
 	partName = Part
-	pos = -0.654765189,2.21772003,0.00465153158
+	pos = -0.654765487,2.21772003,0.00465153158
 	attPos = 0,0,0
 	attPos0 = -0.619637072,-0.741477966,0
 	rot = 1.95399252E-14,-3.27825546E-07,5.96046448E-08,-1.00000012
@@ -1722,7 +1723,7 @@ PART
 {
 	part = basicFin_4294473276
 	partName = Part
-	pos = -0.0351247564,2.21772003,0.624291897
+	pos = -0.0351247564,2.21772003,0.624292195
 	attPos = 0,0,0
 	attPos0 = 1.19209318E-07,-0.741477966,0.619637132
 	rot = 4.21468656E-08,-0.707107186,4.214683E-08,-0.70710659
@@ -1775,7 +1776,7 @@ PART
 {
 	part = basicFin_4294473236
 	partName = Part
-	pos = 0.584515393,2.21772003,0.00465141237
+	pos = 0.584515691,2.21772003,0.00465141237
 	attPos = 0,0,0
 	attPos0 = 0.619637072,-0.741477966,-1.19209375E-07
 	rot = 5.96046448E-08,-1.00000012,-1.95399252E-14,3.27825546E-07
@@ -2007,7 +2008,7 @@ PART
 {
 	part = solarPanels5_4294515290
 	partName = Part
-	pos = -0.0351249054,9.25631142,-0.338711619
+	pos = -0.0351249054,9.25631142,-0.338711739
 	attPos = 0,0,0
 	attPos0 = -2.98023188E-08,-0.0721683502,-0.343361646
 	rot = 0,1.00000012,0,2.08616257E-07
@@ -2079,7 +2080,7 @@ PART
 {
 	part = solarPanels5_4294515246
 	partName = Part
-	pos = -0.035124816,9.25631142,0.348014712
+	pos = -0.035124816,9.25631142,0.348014832
 	attPos = 0,0,0
 	attPos0 = 5.96046448E-08,-0.0721683502,0.343361646
 	rot = 0,1.1920929E-07,0,-1.00000012
@@ -2140,6 +2141,61 @@ PART
 			{
 				actionGroup = None
 				active = False
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+}
+PART
+{
+	part = SurfAntenna_4294513852
+	partName = Part
+	pos = -0.0351248756,8.41124916,0.616114318
+	attPos = 0,0,0
+	attPos0 = -1.77635769E-14,0.000938415527,0.611462653
+	rot = 0.500000119,-0.5,-0.500000119,0.5
+	attRot = 0,-0.707106769,0,0.707106769
+	attRot0 = 0.50000006,-0.49999994,-0.50000006,0.49999994
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = 1
+	resPri = 0
+	dstg = 2
+	sidx = -1
+	sqor = -1
+	sepI = 1
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	srfN = srfAttach,fuelTankSmall_4294493408
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleDataTransmitter
+		isEnabled = True
+		xmitIncomplete = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			StartTransmissionAction
+			{
+				actionGroup = None
 			}
 		}
 		UPGRADESAPPLIED
