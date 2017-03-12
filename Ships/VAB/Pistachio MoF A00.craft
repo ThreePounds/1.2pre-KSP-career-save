@@ -185,9 +185,9 @@ PART
 	{
 		name = ModuleDeployableAntenna
 		isEnabled = True
-		currentRotation = (6.1232336E-17, 1, -6.1232336E-17, -7.55001537E-08)
+		currentRotation = (6.12323492E-17, -1, 6.12323492E-17, 1.33158053E-07)
 		storedAnimationTime = 0
-		storedAnimationSpeed = -10
+		storedAnimationSpeed = 1
 		deployState = RETRACTED
 		stagingEnabled = True
 		EVENTS
@@ -436,9 +436,10 @@ PART
 	link = GooExperiment_4294455392
 	link = solarPanels4_4294530710
 	link = solarPanels4_4294529582
-	link = sensorThermometer_4294517910
 	link = sensorBarometer_4294515236
 	link = sasModule_4294333592
+	link = sensorThermometer_4294517910
+	link = Engineer7500_4294060198
 	attN = bottom,science.module_4294526112
 	attN = top,sasModule_4294333592
 	EVENTS
@@ -796,7 +797,7 @@ PART
 		launchUT = -1
 		currentRotation = (-0.5, -0.5, -0.5, 0.5)
 		storedAnimationTime = 0
-		storedAnimationSpeed = -10
+		storedAnimationSpeed = 1
 		deployState = RETRACTED
 		stagingEnabled = True
 		EVENTS
@@ -867,7 +868,7 @@ PART
 		launchUT = -1
 		currentRotation = (-0.5, -0.5, -0.5, 0.5)
 		storedAnimationTime = 0
-		storedAnimationSpeed = -10
+		storedAnimationSpeed = 1
 		deployState = RETRACTED
 		stagingEnabled = True
 		EVENTS
@@ -888,87 +889,6 @@ PART
 			{
 				actionGroup = None
 				active = False
-			}
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-}
-PART
-{
-	part = sensorThermometer_4294517910
-	partName = Part
-	pos = -0.172564298,15.6092043,0.37131694
-	attPos = 0,0,0
-	attPos0 = -2.71268412E-08,0.215698242,-0.310294896
-	rot = -1,0,0,2.98023224E-08
-	attRot = 0,0,0,1
-	attRot0 = -2.98023224E-08,0,0,-1
-	mir = 1,1,1
-	symMethod = Radial
-	autostrutMode = Off
-	rigidAttachment = False
-	istg = -1
-	resPri = 0
-	dstg = 0
-	sidx = -1
-	sqor = -1
-	sepI = -1
-	attm = 1
-	modCost = 0
-	modMass = 0
-	modSize = 0,0,0
-	srfN = srfAttach,trussAdapter_4294475930
-	EVENTS
-	{
-	}
-	ACTIONS
-	{
-	}
-	PARTDATA
-	{
-	}
-	MODULE
-	{
-		name = ModuleEnviroSensor
-		isEnabled = True
-		sensorActive = False
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-			ToggleAction
-			{
-				actionGroup = None
-			}
-		}
-		UPGRADESAPPLIED
-		{
-		}
-	}
-	MODULE
-	{
-		name = ModuleScienceExperiment
-		isEnabled = True
-		Deployed = False
-		Inoperable = False
-		cooldownToGo = 0
-		stagingEnabled = True
-		EVENTS
-		{
-		}
-		ACTIONS
-		{
-			DeployAction
-			{
-				actionGroup = None
-			}
-			ResetAction
-			{
-				actionGroup = None
 			}
 		}
 		UPGRADESAPPLIED
@@ -1248,7 +1168,7 @@ PART
 	resPri = 0
 	dstg = 3
 	sidx = 0
-	sqor = 3
+	sqor = 2
 	sepI = 0
 	attm = 0
 	modCost = 386.14093
@@ -1734,7 +1654,7 @@ PART
 	resPri = 0
 	dstg = 4
 	sidx = 0
-	sqor = 2
+	sqor = 1
 	sepI = 0
 	attm = 0
 	modCost = 0
@@ -1918,7 +1838,7 @@ PART
 	resPri = 0
 	dstg = 5
 	sidx = 1
-	sqor = 2
+	sqor = 1
 	sepI = 1
 	attm = 0
 	modCost = 0
@@ -2629,7 +2549,7 @@ PART
 	resPri = 0
 	dstg = 8
 	sidx = 0
-	sqor = 5
+	sqor = 4
 	sepI = 1
 	attm = 1
 	modCost = 0
@@ -2766,7 +2686,7 @@ PART
 	resPri = 0
 	dstg = 8
 	sidx = 0
-	sqor = 5
+	sqor = 4
 	sepI = 1
 	attm = 1
 	modCost = 0
@@ -2903,7 +2823,7 @@ PART
 	resPri = 0
 	dstg = 8
 	sidx = 1
-	sqor = 5
+	sqor = 4
 	sepI = 1
 	attm = 1
 	modCost = 0
@@ -3101,7 +3021,7 @@ PART
 	resPri = 0
 	dstg = 8
 	sidx = 1
-	sqor = 5
+	sqor = 4
 	sepI = 1
 	attm = 1
 	modCost = 0
@@ -3299,7 +3219,7 @@ PART
 	resPri = 0
 	dstg = 9
 	sidx = 0
-	sqor = 4
+	sqor = 3
 	sepI = 3
 	attm = 1
 	modCost = 0
@@ -3400,7 +3320,7 @@ PART
 	resPri = 0
 	dstg = 10
 	sidx = 2
-	sqor = 5
+	sqor = 4
 	sepI = 3
 	attm = 1
 	modCost = 0
@@ -3552,7 +3472,7 @@ PART
 {
 	part = launchClamp1_4294423834
 	partName = Part
-	pos = -3.61359477,1.55396461,0.0610220432
+	pos = -3.61359525,1.55396461,0.0610220432
 	attPos = 0,0,0
 	attPos0 = -9.73231948E-08,-2.8698616,1.41200387
 	rot = 7.54519363E-08,0.707106769,-7.5451922E-08,0.707106888
@@ -3566,7 +3486,7 @@ PART
 	resPri = 0
 	dstg = 10
 	sidx = 3
-	sqor = 5
+	sqor = 4
 	sepI = 4
 	attm = 1
 	modCost = 0
@@ -3588,7 +3508,7 @@ PART
 		name = LaunchClamp
 		isEnabled = True
 		scaleFactor = 0.877503753
-		height = 2.21411514
+		height = 2.2141161
 		stagingEnabled = True
 		towerRot = -7.54519363E-08,-0.707106769,7.5451922E-08,0.707106888
 		EVENTS
@@ -3671,7 +3591,7 @@ PART
 	resPri = 0
 	dstg = 9
 	sidx = 0
-	sqor = 4
+	sqor = 3
 	sepI = 3
 	attm = 1
 	modCost = 0
@@ -3772,7 +3692,7 @@ PART
 	resPri = 0
 	dstg = 10
 	sidx = 2
-	sqor = 5
+	sqor = 4
 	sepI = 3
 	attm = 1
 	modCost = 0
@@ -3924,7 +3844,7 @@ PART
 {
 	part = launchClamp1_4294423576
 	partName = Part
-	pos = 3.26846719,1.55396461,0.0610220395
+	pos = 3.26846766,1.55396461,0.0610220395
 	attPos = 0,0,0
 	attPos0 = -1.19250416E-07,-2.8698616,1.41200435
 	rot = -7.5451922E-08,0.707106829,-7.54519363E-08,-0.707106829
@@ -3938,7 +3858,7 @@ PART
 	resPri = 0
 	dstg = 10
 	sidx = 3
-	sqor = 5
+	sqor = 4
 	sepI = 4
 	attm = 1
 	modCost = 0
@@ -3960,7 +3880,7 @@ PART
 		name = LaunchClamp
 		isEnabled = True
 		scaleFactor = 0.877503753
-		height = 2.21411514
+		height = 2.2141161
 		stagingEnabled = True
 		towerRot = 7.5451922E-08,-0.707106829,7.54519291E-08,-0.707106829
 		EVENTS
@@ -4043,7 +3963,7 @@ PART
 	resPri = 0
 	dstg = 8
 	sidx = 4
-	sqor = 5
+	sqor = 4
 	sepI = 4
 	attm = 1
 	modCost = 0
@@ -4064,7 +3984,7 @@ PART
 	{
 		name = LaunchClamp
 		isEnabled = True
-		scaleFactor = 3.0421598
+		scaleFactor = 3.04216027
 		height = 7.67596817
 		stagingEnabled = True
 		towerRot = -1.78813934E-07,0,0,-1
@@ -4148,7 +4068,7 @@ PART
 	resPri = 0
 	dstg = 8
 	sidx = 4
-	sqor = 5
+	sqor = 4
 	sepI = 4
 	attm = 1
 	modCost = 0
@@ -4169,7 +4089,7 @@ PART
 	{
 		name = LaunchClamp
 		isEnabled = True
-		scaleFactor = 3.0421598
+		scaleFactor = 3.04216027
 		height = 7.67596817
 		stagingEnabled = True
 		towerRot = 7.81620489E-15,1,1.78813934E-07,4.37113883E-08
@@ -4284,6 +4204,152 @@ PART
 			{
 				actionGroup = None
 			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+}
+PART
+{
+	part = sensorThermometer_4294517910
+	partName = Part
+	pos = -0.172564268,15.8250637,-0.250705272
+	attPos = 0,0.0649328232,0
+	attPos0 = 0,-0.0650939941,0.311727315
+	rot = 0,-2.98023224E-08,1,0
+	attRot = 0,0,0,1
+	attRot0 = 0,1,2.98023224E-08,0
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = -1
+	resPri = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = -1
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	srfN = srfAttach,trussAdapter_4294475930
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = ModuleEnviroSensor
+		isEnabled = True
+		sensorActive = False
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			ToggleAction
+			{
+				actionGroup = None
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = ModuleScienceExperiment
+		isEnabled = True
+		Deployed = False
+		Inoperable = False
+		cooldownToGo = 0
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+			DeployAction
+			{
+				actionGroup = None
+			}
+			ResetAction
+			{
+				actionGroup = None
+			}
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+}
+PART
+{
+	part = Engineer7500_4294060198
+	partName = Part
+	pos = -0.172564238,15.7924929,0.37112096
+	attPos = 0,0,0
+	attPos0 = 2.98023224E-08,0.032409668,-0.310098916
+	rot = -0.704416096,-0.0616284497,0.704416096,0.0616284497
+	attRot = 0,0,-0.0871557519,0.99619472
+	attRot0 = -0.0616284497,0.704416096,0.0616284497,-0.704416096
+	mir = 1,1,1
+	symMethod = Radial
+	autostrutMode = Off
+	rigidAttachment = False
+	istg = -1
+	resPri = 0
+	dstg = 0
+	sidx = -1
+	sqor = -1
+	sepI = -1
+	attm = 1
+	modCost = 0
+	modMass = 0
+	modSize = 0,0,0
+	srfN = srfAttach,trussAdapter_4294475930
+	EVENTS
+	{
+	}
+	ACTIONS
+	{
+	}
+	PARTDATA
+	{
+	}
+	MODULE
+	{
+		name = FlightEngineerModule
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
+		}
+		UPGRADESAPPLIED
+		{
+		}
+	}
+	MODULE
+	{
+		name = TapeDriveAnimator
+		isEnabled = True
+		stagingEnabled = True
+		EVENTS
+		{
+		}
+		ACTIONS
+		{
 		}
 		UPGRADESAPPLIED
 		{
